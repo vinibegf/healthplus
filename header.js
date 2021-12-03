@@ -1,9 +1,17 @@
-$(document).ready(function() {
-    $(".nav-bar__ativador--menu").click(function() {
-        $(".nav-menu").toggleClass("nav-menu--ativado");
-    });
+function abrirNavMenu() {
+    const navMenu = document.querySelector(".nav-menu");
+    if (navMenu.classList.contains("nav-menu--ativado")) {
+        navMenu.classList.remove("nav-menu--ativado");
+    } else {
+        navMenu.classList.add("nav-menu--ativado");
+    }
+}
 
-    $(".nav-bar__ativador--pesquisa").click(function() {
-        $(".nav-pesquisa").slideToggle(125);
-    });
-});
+function abrirNavPesquisa() {
+    const navPesquisa = document.querySelector(".nav-pesquisa");
+    if (navPesquisa.classList.contains("nav-pesquisa--ativado")) {
+        navPesquisa.classList.remove("nav-pesquisa--ativado");
+    } else {
+        navPesquisa.classList.add("nav-pesquisa--ativado");
+    }
+}
