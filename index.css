@@ -1,8 +1,16 @@
 :root {
-    --ff-um: "Poppins", sans-serif;
+    --ff-um: 'Poppins';
+    --p: 16px;
+    --h6: 21.33px;
+    --h5: 28.43px;
+    --h4: 37.90px;
+    --h3: 50.52px;
+    --h2: 67.84px;
+    --h1: 89.76px;
     --cor-um: white;
     --cor-dois: black;
     --cor-tres: rgb(67, 67, 255);
+
 }
 
 * {
@@ -58,7 +66,7 @@
 
 .nav-bar__logo a {
     color: var(--cor-dois);
-    font-size: 32px;
+    font-size: var(p);
     font-weight: 400;
 }
 
@@ -277,7 +285,7 @@ main {
     display: inline-block;
     margin: 1.2rem 0;
     padding-left: calc(9px + 6px);
-    font-size: 29px;
+    font-size: var(--h4);
     font-weight: 400;
     line-height: 30px;
 }
@@ -294,7 +302,7 @@ main {
 .categorias__subtitulo--principal {
     margin-bottom: 2rem;
     max-width: 17ch;
-    font-size: 27px;
+    font-size: var(--h6);
     font-weight: 300;
 }
 
@@ -362,7 +370,7 @@ main {
     position: relative;
     margin-bottom: 1rem;
     padding-left: calc(12px + 6px);
-    font-size: 1.953rem;
+    font-size: var(--h4);
     font-weight: 500;
     line-height: 44px;   
 }
@@ -380,14 +388,11 @@ main {
     content: "";
 }
 
-.artigos__subtitulo {
-    font-size: 1.563rem;
-}
 
 .artigos__subtitulo--principal {
     margin-bottom: 1rem;
     max-width: 15ch;
-    font-size: 27px;
+    font-size: var(--h5);
     font-weight: 300;
 }
 
@@ -447,7 +452,7 @@ main {
 
 .artigo__link {
     color: var(--cor-tres);
-    font-size: 1.563rem;
+    font-size: var(--h5);
     font-weight: 600;
 }
 
@@ -455,7 +460,7 @@ main {
     margin-bottom: 1.2rem;
     max-width: 28ch;
     color: rgb(41, 41, 41);
-    font-size: 1rem;
+    font-size: var(--p);
     font-weight: 300;
     line-height: 30px;
 }
