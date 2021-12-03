@@ -105,8 +105,9 @@ nav {
 
 .nav-menu__titulo {
     margin-top: 2rem;
+    color: rgb(41, 41, 41);
     font-size: var(--h6);
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
