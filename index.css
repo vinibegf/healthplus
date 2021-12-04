@@ -177,6 +177,7 @@ nav {
     top: 2.5rem;
     z-index: 99;
     width: 100%;
+    height: 2.5rem;
     padding: 1.2rem;
     background: var(--cor-um);
     font-size: var(--p); 
@@ -232,8 +233,8 @@ nav {
 .destaques {
     position: relative;
     top: 2.5rem;
-    height: 65vh;
-    margin-bottom: 3rem;
+    height: 55vh;
+    margin-bottom: 2.5rem;
 }
 
 .destaques__titulo-principal {
@@ -288,9 +289,9 @@ nav {
 .destaques__indicador {
     width: 15px;
     height: 15px;
-    border: 2px solid var(--cor-um);
-    border-radius: 360px;
     margin: 1rem;
+    border: 2.5px solid var(--cor-um);
+    border-radius: 360px;
     transition: 350ms;
 }
 
@@ -313,9 +314,9 @@ nav {
     justify-content: flex-end;
     align-items: flex-end;
     padding: 4rem 1.2rem;
-    box-shadow: -2px -1px 73px 200px rgba(0,0,0,0.25) inset;
-    -webkit-box-shadow: -2px -1px 73px 200px rgba(0,0,0,0.25) inset;
-    -moz-box-shadow: -2px -1px 73px 200px rgba(0,0,0,0.25) inset;
+    box-shadow: -2px -1px 73px 3000px rgba(0,0,0,0.25) inset;
+    -webkit-box-shadow: -2px -1px 73px 3000px rgba(0,0,0,0.25) inset;
+    -moz-box-shadow: -2px -1px 73px 3000px rgba(0,0,0,0.25) inset;
     transition: 500ms;
 }
 
@@ -336,7 +337,7 @@ nav {
 }
 
 .destaques__titulo {
-    font-size: var(--h3);
+    font-size: var(--h4);
     font-weight: 600;
     text-align: right;
 }
@@ -350,15 +351,23 @@ main {
 }
 
 .categorias {
-    padding: 0 1.2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-areas:
+        "titulo ."
+        "dropdown ativador";
     margin-bottom: 5rem;
+    padding: 1rem 1rem 0 1rem;
+    background: var(--cor-dois);
 }
 
 .categorias__titulo-principal {
+    grid-area: titulo;
     position: relative;
     display: inline-block;
-    margin: 1.2rem 0;
+    margin-bottom: 1.5rem;
     padding-left: calc(9px + 6px);
+    color: var(--cor-um);
     font-size: var(--h4);
     font-weight: 400;
     line-height: 30px;
@@ -373,13 +382,62 @@ main {
     content: "";
 }
 
-.categorias__subtitulo--principal {
-    margin-bottom: 2rem;
-    max-width: 17ch;
-    font-size: var(--h6);
-    font-weight: 300;
+.categorias__nav {
+    grid-area: dropdown;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
 }
 
+.categorias__nav::-webkit-scrollbar {
+    display: none;
+}
+
+.categorias__item {
+    display: inline-block;
+}
+
+.categorias__botao {
+    display: inline-block;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 15px;
+    background: var(--cor-um);
+    color: var(--cor-tres);
+    font-size: var(--h6);
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+.categorias__botao {
+    margin-bottom: 1rem;
+}
+
+.categorias__botao:not(.categorias__botao--ativo) {
+    display: none;
+}
+
+.categorias__botao--ativo {
+    transform: translateX(0);
+    color: var(--cor-um);
+    background: var(--cor-tres);
+    font-weight: 600;
+}
+
+.categorias__ativador {
+    grid-area: ativador;
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    color: var(--cor-tres);
+    font-size: var(--h3);
+}
+
+/* 
 .categorias__card {
     width: 100%;
     height: 11rem;
@@ -433,7 +491,7 @@ main {
 .categorias__titulo--direita {
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
-}
+} */
 
 .artigos {
     padding: 1.2rem;
