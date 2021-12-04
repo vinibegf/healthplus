@@ -81,7 +81,7 @@
                 </div>
                 <div class="destaques__slide destaques__slide2">
                     <h3 class="destaques__titulo">
-                        <a href="#" class="destaques__link">Boas práticas de alimentação</a>
+                        <a href="#" class="destaques__link">Boas práticas de alimentação.</a>
                     </h3>
                 </div>
                 <div class="destaques__slide destaques__slide3">
@@ -105,10 +105,21 @@
     <main>
         <div class="categorias">
             <h2 class="categorias__titulo-principal">Categorias</h2>
-            <h3 class="categorias__subtitulo categorias__subtitulo--principal">
-                Encontre facilmente as informações que você busca.
-            </h3>
-            <div class="categorias__cards">
+            <ul class="categorias__nav">
+                <li class="categorias__item">
+                    <button class="categorias__botao categorias__botao--ativo">Atividade Física</button>
+                </li>
+                <li class="categorias__item">
+                    <button class="categorias__botao">Alimentação</button>
+                </li>
+                <li class="categorias__item">
+                    <button class="categorias__botao">Saúde</button>
+                </li>
+            </ul>
+            <button class="categorias__ativador">
+                <span class="material-icons-outlined">chevron_left</span>
+            </button>
+            <!-- <div class="categorias__cards">
                 <div class="categorias__card categorias__card1">
                     <h3 class="categorias__titulo categorias__titulo--esquerda">Exercício Físico</h3>
                 </div>
@@ -118,7 +129,7 @@
                 <div class="categorias__card categorias__card3">
                     <h3 class="categorias__titulo categorias__titulo--esquerda">Saúde</h3>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="artigos">
             <h2 class="artigos__titulo-principal">Veja nossos artigos</h2>
@@ -152,5 +163,6 @@
     </main>
     <script src="header.js"></script>
     <script src="carousel.js"></script>
+    <script src="categoria.js"></script>
 </body>
 </html>
