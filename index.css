@@ -81,7 +81,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 5;
-    width: auto;
+    width: 60vw;
     height: 100vh;
     padding-right: 1rem;
     background: var(--cor-um);
@@ -161,6 +161,7 @@ nav {
 
 .destaques__titulao {
     position: absolute;
+    z-index: 1;
     margin: 1.25rem;
     clip-path: polygon(4% 0, 100% 0%, 96% 100%, 0% 100%);
     padding: 0 1rem;
@@ -173,6 +174,7 @@ nav {
 .destaques__indicadores {
     position: absolute;
     bottom: 0;
+    z-index: 1;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -188,6 +190,53 @@ nav {
 
 .destaques__indicador--atual {
     background: var(--cor-tres);
+}
+
+
+.destaques__slides {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.destaques__slide {
+    min-width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 4rem 1.2rem;
+    box-shadow: -2px -1px 73px 3000px rgba(0,0,0,0.25) inset;
+    -webkit-box-shadow: -2px -1px 73px 3000px rgba(0,0,0,0.25) inset;
+    -moz-box-shadow: -2px -1px 73px 3000px rgba(0,0,0,0.25) inset;
+    transition: 500ms;
+}
+
+.destaques__slide > * {
+    transform: translateX(-0vw);
+}
+
+.destaques__slide1 {
+    background: url("https://images.unsplash.com/photo-1615809265660-21681e60e2bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.destaques__slide2 {
+    background: url("https://images.unsplash.com/photo-1614961234274-f204d01c115e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.destaques__titulo {
+    font-size: var(--h2);
+    font-weight: 500;
+    text-align: start;
+}
+
+.destaques__link {
+    color: var(--cor-um);
 }
 
 .categorias {
@@ -263,9 +312,9 @@ nav {
     border-radius: 15px;
     min-height: 13rem;
     margin-bottom: calc(1.2rem / 2);
-    background: url("https://images.unsplash.com/photo-1615809265660-21681e60e2bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80");
-    background-size: cover;
-    background-position: center;
+    -webkit-box-shadow: inset 0px 0px 51px -17px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 0px 51px -17px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 51px -17px rgba(0,0,0,0.5);
 }
 
 .artigo__titulo {
@@ -435,4 +484,22 @@ footer * {
     font-weight: 600;
 }
 
+#como-devo-me-hidratar .artigo__imagem {
+    background: url("https://images.unsplash.com/photo-1615809265660-21681e60e2bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80");
+    background-size: cover;
+    background-position: center;
+}
 
+#como-faco-para-medir-meu-bpm .artigo__imagem {
+    background: url("https://images.unsplash.com/photo-1532288922150-c04819be02b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: 150vw;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#refeicoes-antes-de-se-exercitar .artigo__imagem {
+    background: url("https://images.unsplash.com/photo-1614961234274-f204d01c115e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+}
