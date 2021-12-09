@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>health+ | Início</title>
+    <link rel="stylesheet" href="fontes.css">
+    <link rel="stylesheet" href="artigo.css" type="text/css">
+</head>
+<body class="grid-principal">
+    <nav>
+        <div class="nav-bar">
+            <button class="nav-bar__ativador nav-bar__ativador--menu" onclick="abrirMenu()">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+            <h1 class="nav-bar__logo">
+                <a href="index.html" class="nav-bar__link">health<span>+</span></a>
+            </h1>
+            <button class="nav-bar__ativador nav-bar__ativador--pesquisa" onclick="clicarPesquisa()">
+                <span class="material-icons-outlined">search</span>
+            </button>
+        </div>
+        <input type="text" name="#" placeholder="Digite sua pesquisa" class="nav-pesquisa">
+        <ul class="nav-menu">
+            <li class="nav-menu__ativador-embrulho">
+                <button class="nav-menu__ativador" onclick="fecharMenu()">
+                    <span class="material-icons-outlined">close</span>
+                </button>
+            </li>
+            <li class="nav-menu__item">
+                <a href="index.html" class="nav-menu__link">Início</a>
+            </li> 
+            <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Artigos</a>
+            </li> 
+            <li class="nav-menu__item">
+                <h3 class="nav-menu__titulo">Mais</h3>
+            </li>
+            <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Sobre Nós</a>
+            </li> 
+            <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Contato</a>
+            </li> 
+        </ul>
+        <div class="escurecer"></div>
+    </nav>
+    <main>
+        <article class="artigo">
+            <div class="artigo__imagem-principal" id="como-devo-me-hidratar">
+            </div>
+            <div class="artigo__conteudo">
+                <ul class="artigo__informacoes">
+                    <li class="artigo__informacao">
+                        <a href="#" class="artigo__categoria">
+                            Ativ. Física
+                        </a>
+                    </li>
+                    <li class="artigo__divididor"></li>
+                    <li class="artigo__informacao">
+                        7 DEZ 21
+                    </li>
+                    <li class="artigo__divididor"></li>
+                    <li class="artigo__informacao">
+                        2 MINUTOS
+                    </li> 
+                 </ul>
+                <h2 class="artigo__titulo">
+                    Como devo me hidratar?
+                </h2>
+                <div class="artigo__paragrafos">
+                    <p class="artigo__paragrafo">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente labore sed aperiam eius voluptatum corrupti earum nostrum est consequatur repudiandae dolores consectetur, provident, expedita impedit!
+                    </p>
+                    <p class="artigo__paragrafo">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quae tempora ducimus nulla corrupti quidem soluta blanditiis quos voluptates. Voluptatum vel voluptates <b class="artigo__paragrafo--negrito">exercitationem perferendis?</b> Culpa enim nostrum repellendus beatae vitae accusantium dignissimos debitis possimus sint!
+                    </p>
+                    <p class="artigo__paragrafo">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nihil culpa illo facilis deleniti sit.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <section class="newsletter">
+            <h2 class="newsletter__titulao">
+                Não quer perder nenhum artigo?
+                <span>Se inscreva na nossa newsletter.</span>
+            </h2>
+            <div class="newsletter__entrada">
+                <input type="text" name="#" placeholder="Seu primeiro nome" class="newsletter__input">
+                <input type="text" name="#" placeholder="Seu e-mail" class="newsletter__input">
+                <button class="newsletter__ativador">
+                    Participar <span class="material-icons-outlined">arrow_forward</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3 class="footer__logo">
+            health<span>+</span>
+        </h3>
+        <ul class="footer__lista footer__lista--esquerda">
+            <li class="footer__item">
+                <h4 class="footer__titulo">
+                    Sobre o site
+                </h4>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Termos de serviço</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Sobre Nós</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Contato</a>
+            </li>
+        </ul>
+        <ul class="footer__lista footer__lista--direita">
+            <li class="footer__item">
+                <h4 class="footer__titulo">Redes Sociais</h4>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Facebook</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Twitter</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="carousel1.js"></script>
+    <script src="carouselo.js"></script>
+    <script src="nav.js"></script>
+    <script src="categorias.js"></script>
+</body>
+</html>
