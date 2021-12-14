@@ -164,23 +164,22 @@ nav {
 }
 
 .artigo__conteudo {
-    padding-top: 1.2rem;
     display: grid;
-    place-content: center;
-    align-content: center;
+    padding: 1.25rem;
 }
 
-.artigo__conteudo > * {
-    margin-bottom: 1.2rem;
+.artigo__conteudo > *:not(.artigo__indice) {
+    margin-bottom: 1.25rem;
 }
 
 .artigo__informacoes {
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
 }
 
 .artigo__informacoes > * {
-    margin-right: calc(1.2rem / 2);
+    margin-right: calc(1.25rem / 2);
     font-size: var(--p);
     font-weight: 400;
     text-transform: uppercase;
@@ -202,18 +201,56 @@ nav {
 }
 
 .artigo__titulo {
-    max-width: 15ch;
+    max-width: 16ch;
     color: var(--cor-tres);
     font-size: var(--h2);
     line-height: 45px;
 }
 
+.artigo__indice {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid var(--cor-dois);
+    border-radius: 15px;
+    background: var(--cor-dois);
+}
+
+.artigo__indice-item {
+    color: var(--cor-tres);
+    font-weight: 500;
+}
+
+.artigo__indice-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.artigo__indice-titulo {
+    color: var(--cor-um);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.artigo__indice-link {
+    color: var(--cor-tres);
+    font-weight: 300;
+    text-decoration: 1px solid underline var(--cor-tres);
+}
+
+.artigo__texto > * {
+    margin-bottom: 1.25rem;
+}
+
 .artigo__paragrafo {
-    max-width: 33ch;
-    margin-bottom: 1.2rem;
     font-size: var(--p);
     font-weight: 300;
     line-height: 27px;
+}
+
+.artigo__subtitulo {
+    margin-top: 1.75rem;
+    max-width: 16ch;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .artigo__paragrafo--negrito {
@@ -231,13 +268,13 @@ nav {
     grid-template-areas: 
         "titulao titulao"
         "entrada entrada";
-    padding: 1.2rem;
+    padding: 1.25rem;
     background: var(--cor-dois);
 }
 
 .newsletter__titulao {
     grid-area: titulao;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.25rem;
     max-width: 15ch;
     color: var(--cor-um);
     font-size: var(--h2);
@@ -246,7 +283,7 @@ nav {
 
 .newsletter__titulao > span {
     display: inline-block;
-    margin-top: calc(1.2rem / 2);
+    margin-top: calc(1.25rem / 2);
 }
 
 .newsletter__entrada {
@@ -256,7 +293,7 @@ nav {
 }
 
 .newsletter__entrada > *:not(:last-child) {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.25rem;
 }
 
 .newsletter__input {
@@ -299,7 +336,7 @@ nav {
 
 footer {
     display: grid;
-    padding: 1.2rem;
+    padding: 1.25rem;
     background: var(--cor-dois);
 }
 
@@ -311,7 +348,7 @@ footer * {
     grid-row: 1;
     grid-column: 1 / span 2;
     place-self: center;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.25rem;
     font-size: var(--h2);
 }
 
@@ -336,7 +373,7 @@ footer * {
 }
 
 .footer__item {
-    margin-bottom: calc(1.2rem / 2);
+    margin-bottom: calc(1.25rem / 2);
     max-width: 13ch;
 }
 
